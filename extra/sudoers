@@ -1,0 +1,7 @@
+
+# Cmnd alias specification
+Cmnd_Alias DUSTNODE = /usr/local/bin/node /*/dustnode.js setup , /usr/local/bin/node /*/dustnode.js teardown
+
+
+# User privilege specification
+nobody ALL=NOPASSWD: DUSTNODE

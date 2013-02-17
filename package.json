@@ -1,0 +1,30 @@
+{
+      "name" : "dustnode-dustpi-gpio"
+    , "version" : "0.0.1"
+    , "author" : "Hannes Hörl <hannes.hoerl@snowreporter.com>"
+    , "main" : "lib/dustnode.js"
+    , "description" : "Daemon for reading dust concentration via GPIO"
+    , "scripts" : {
+          "start" : "sudo extra/init.sh start"
+	, "stop" : "sudo extra/init.sh stop"
+	, "test" : "sh -c 'echo no test by now ; exit 1'"
+	, "run" : "node lib/dustnet.js"
+    }
+    , "engines" : {
+	"node" : ">=0.8.19"
+    }
+    , "license": "MIT"
+    , "repository": {
+	  "type": "git"
+	, "url": "https://github.com/hoegaarden/dustnode-dustpi-gpio.git"
+    }
+    , "keywords" : [
+	  "dustmap"
+	, "dust"
+	, "gpio"
+    ]
+    , "dependencies" : {
+	  "onoff" : ">=0.1.2"
+    }
+    , "readmeFilename" : "README.txt"
+}
