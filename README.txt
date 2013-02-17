@@ -16,7 +16,7 @@ pi@dust-pi ~ $ cd dustnode-dustpi-gpio
 pi@dust-pi ~/dustnode-dustpi-gpio $ npm install
 pi@dust-pi ~/dustnode-dustpi-gpio $ sudo ln -s `pwd`/extra/init.sh /etc/init.d/dustnode
 pi@dust-pi ~/dustnode-dustpi-gpio $ sudo update-rc.d dustnode defaults
-pi@dust-pi ~/dustnode-dustpi-gpio $ sudo cp extra/sudoers /etc/sudoers
+pi@dust-pi ~/dustnode-dustpi-gpio $ sudo cp extra/sudoers /etc/sudoers.d/dustnode
 pi@dust-pi ~/dustnode-dustpi-gpio $ sudo /etc/init.d/dustnode start
 
 Priviliges
