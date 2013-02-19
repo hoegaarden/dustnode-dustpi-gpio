@@ -5,6 +5,10 @@ module.exports = {
   , station_id: 2
   , station_pass: 'herrbert'
   , socket_path: '/tmp/dust.sock'
+  // , file_opts : {
+  //     path : __dirname + "/../data/sensor.csv"
+  //   , format : 'csv'
+  // }
   , url_opts : {
       hostname : 'monitor.zobl.at'
     , port: 3000

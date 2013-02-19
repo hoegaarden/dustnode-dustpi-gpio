@@ -8,6 +8,39 @@ It was coded and tested on a raspberry-pi (hence the name dustpi) but
 schould run on any linux system which has GPIO-ports[3] and can run
 node.js[4].
 
+Hardware
+--------
+
+Needed hardware:
+- raspberry-pi
+- the dust sensor[1]
+- 2 resistors (2kΩ & 3kΩ)
+- some cables
+
+    RaspberryPi                  Dust sensor
+  +-------------+               +-----------+
+  |             |               |           |
+  |         5V -+---------------+- 3        |
+  |             |               |           |
+  |        GND -+-------+-------+- 1        |
+  |             |       |       |           |
+  |             |       ▉ 3kΩ   |           |
+  |             |       ▉       |           |
+  |             |       |       |           |
+  |       GPIO -+-------+       |           |
+  |             |       |       |           |
+  |             |       ▉ 2kΩ   |           |
+  |             |       ▉       |           |
+  |             |       |       |           |
+  |             |       +-------+- 4        |
+  |             |               |           |
+  +-------------+               +-----------+
+
+See the raspberrypi documentation on which pins you can use - i use those:
+  P1-02 ... 5V
+  P1-06 ... GND
+  P1-07 ... GPIO ( gpio_pin=4 )
+
 Installation
 ------------
 
